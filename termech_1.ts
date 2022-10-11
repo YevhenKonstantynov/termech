@@ -128,10 +128,10 @@ class PointSystem {
             }
         ], {
             xaxis: {
-                range: [ -10.5, -9.5 ]
+                range: [ -11.5, -10.5 ]
             },
             yaxis: {
-                range: [ 9, 10 ]
+                range: [ 10, 11 ]
             }
         })
     }
@@ -256,10 +256,10 @@ class PointSystem {
             },
         ], {
             xaxis: {
-                range: [ -11, -9 ]
+                range: [ -12, -10 ]
             },
             yaxis: {
-                range: [ 9, 11 ]
+                range: [ 9.5, 11.5 ]
             }
         })
     }
@@ -308,7 +308,7 @@ const output = fs.createWriteStream(`./${FILE_NAME}.txt`)
 
 const system = new PointSystem(0.43, -1.26, 0.72, 0.75, output)
 
-const t1 = 0.65
+const t1 = 0.63
 
 const trajectory = system.getTrajectory(t1, 3)
 const x = system.getX(t1)
